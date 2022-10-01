@@ -1,0 +1,128 @@
+/*colors*/
+:root {
+  --Soft_Blue: #8bacd9;
+  --Very_Dark_Blue: #15263f;
+  --Cyan: #00fff8;
+  --Dark_Blue_Main: #0d192c;
+  --Dark_Blue_Line: #2e405a;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+body {
+  background-color: var(--Dark_Blue_Main);
+  font-family: "Outfit", sans-serif;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.card {
+  border-radius: 15px;
+  position: absolute;
+  width: 350px;
+  height: 596px;
+  background-color: var(--Very_Dark_Blue);
+}
+.image-container {
+  width: 302px;
+  padding: 24px;
+}
+
+.card-image {
+  width: 100%;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+.img-hover {
+  width: 100%;
+  height: 302px;
+  position: absolute;
+  border-radius: 8px;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Cyan);
+  transition: all 0.3s linear;
+}
+.img-hover:hover {
+  opacity: 1;
+}
+
+.h2 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27.72px;
+  color: #ffffff;
+  height: 28px;
+  font-style: bold;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  margin-top: 24px;
+}
+
+.h3 {
+  color: var(--Soft_Blue);
+  font-weight: 300;
+  height: 52px;
+  line-height: 26px;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+.text_container_2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  border-bottom: 1px solid var(--Dark_Blue_Line);
+  padding-bottom: 24px;
+}
+.ethereum {
+  color: var(--Cyan);
+  display: flex;
+  align-items: center;
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+  color: var(--Soft_Blue);
+}
+.img_icon {
+  margin-right: 5px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+}
+.avatar {
+  width: 33px;
+  height: 33px;
+  margin-top: 16px;
+  margin-right: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+.creation {
+  font-size: 16px;
+  color: var(--Soft_Blue);
+  margin-right: 5px;
+  margin-top: 22px;
+}
+.text_hover {
+  margin-top: 22px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.text_hover:hover,
+.h2:hover {
+  color: var(--Cyan);
+  transform: scale(1.1);
+}
