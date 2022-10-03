@@ -5,6 +5,7 @@
   --Cyan: #00fff8;
   --Dark_Blue_Main: #0d192c;
   --Dark_Blue_Line: #2e405a;
+  --Cyan_opacity: #00fff77c;
 }
 
 .flex-center {
@@ -45,8 +46,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--Cyan);
-  transition: all 0.3s linear;
+  background-color: var(--Cyan_opacity);
+  transition: all 1s linear;
 }
 .img-hover:hover {
   opacity: 1;
